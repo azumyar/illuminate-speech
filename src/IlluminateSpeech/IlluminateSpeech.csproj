@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows10.0.19041.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>Yarukizero.Net.IlluminateSpeech</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.15" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Prism.Unity" Version="8.1.97" />
+    <PackageReference Include="Prism.Wpf" Version="8.1.97" />
+    <PackageReference Include="ReactiveProperty.WPF" Version="9.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ChromiumRecognition\ChromiumRecognition.csproj" />
+    <ProjectReference Include="..\FileExportPlugin\FileExportPlugin.csproj" />
+    <ProjectReference Include="..\WinRtRecognition\WinRTRecognition.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="YukarinetteInterface">
+      <HintPath>..\..\lib\YukarinetteInterface.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
